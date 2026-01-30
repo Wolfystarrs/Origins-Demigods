@@ -1,6 +1,21 @@
 {
     "name": "Spring Growth",
     "description": "Having known both creation and the underworld, you’ve found a way to grant a second life, like the cycle of winter to spring.",
-    "type": "origins:simple",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:give",
+        "stack": {
+            "id": "minecraft:totem_of_undying",
+            "amount": 1
+        }
+    },
+    "cooldown": 288000,
+    "hud_render": {
+        "should_render": true
+    },
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+    },
     "priority": 0
 }
