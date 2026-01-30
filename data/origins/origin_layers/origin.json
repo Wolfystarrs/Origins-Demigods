@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "origins": [
+    "demigod_origins:aphrodite",
+    "demigod_origins:apollo",
+    "demigod_origins:ares",
+    "demigod_origins:athena",
+    "demigod_origins:demeter",
+    "demigod_origins:dionysus",
+    "demigod_origins:hades",
+    "demigod_origins:hepheastus",
+    "demigod_origins:hermes",
+    "demigod_origins:nyx",
+    "demigod_origins:persephone",
+    "demigod_origins:poseidon",
+    "demigod_origins:zeus"
+  ]
+}

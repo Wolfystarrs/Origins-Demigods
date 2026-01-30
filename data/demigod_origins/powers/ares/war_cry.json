@@ -1,0 +1,6 @@
+{
+    "name": "War Cry",
+    "description": "A child of the god of war, you can channel your fury in battle, increasing your chances of victory.",
+    "type": "origins:simple",
+    "priority": 0
+}

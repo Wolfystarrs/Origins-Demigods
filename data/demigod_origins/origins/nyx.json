@@ -1,0 +1,16 @@
+{
+    "name": "The Child Of Nyx",
+    "description": "You are the child of the primordial goddess and personifcation of night.",
+          "powers": [
+        "demigod_origins:nyx/night_child",
+        "demigod_origins:nyx/void_grasp",
+        "demigod_origins:nyx/dark_veil",
+        "demigod_origins:nyx/shadow_foot"
+    ],
+    "icon": {
+        "amount": 1,
+        "id": "minecraft:oak_log"
+    },
+
+    "impact": 0
+}

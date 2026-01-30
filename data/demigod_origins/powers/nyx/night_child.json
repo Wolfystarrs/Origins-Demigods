@@ -1,0 +1,6 @@
+{
+    "name": "Night Child",
+    "description": "When in darkness, you feel rested and powerful, passively healing under the cover of night.",
+    "type": "origins:simple",
+    "priority": 0
+}

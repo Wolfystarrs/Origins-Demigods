@@ -1,0 +1,15 @@
+{
+    "name": "The Child Of Persephone",
+    "description": "You are the child of the goddess of the dead, springtime, and rebirth.",
+        "powers": [
+        "demigod_origins:persephone/botanic_keepsakes",
+        "demigod_origins:persephone/winter_mode",
+        "demigod_origins:persephone/summer_mode",
+        "demigod_origins:persephone/spring_growth"
+    ],
+    "icon": {
+        "amount": 1,
+        "id": "minecraft:oak_log"
+    },
+    "impact": 0
+}

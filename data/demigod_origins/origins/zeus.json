@@ -1,0 +1,15 @@
+{
+    "name": "Child Of Zeus",
+    "description": "You are the child of the god of the sky, lightning, order, and justice.",
+    "powers": [
+        "demigod_origins:zeus/thunder_struck",
+        "demigod_origins:zeus/spear_affinity",
+        "demigod_origins:zeus/sky_healing",
+        "demigod_origins:zeus/storm_bringer"
+    ],
+    "icon": {
+        "amount": 1,
+        "id": "minecraft:oak_log"
+    },
+    "impact": 0
+}

@@ -1,0 +1,15 @@
+{
+    "name": "The Child Of Demeter",
+    "description": "You are the child of the goddess of harvest, agriculture, and the earth.",
+        "powers": [
+        "demigod_origins:demeter/farming_affinity",
+        "demigod_origins:demeter/earthly_blessing",
+        "demigod_origins:persephone/seasonal_affection",
+        "demigod_origins:demeter/barren_grief"
+    ],
+    "icon": {
+        "amount": 1,
+        "id": "minecraft:oak_log"
+    },
+    "impact": 0
+}

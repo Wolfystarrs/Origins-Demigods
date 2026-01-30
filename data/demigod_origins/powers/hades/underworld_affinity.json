@@ -1,0 +1,6 @@
+{
+    "name": "Underworld Affinity",
+    "description": "You are respected by those in the underworld, and the undead can sense this.",
+    "type": "origins:simple",
+    "priority": 0
+}

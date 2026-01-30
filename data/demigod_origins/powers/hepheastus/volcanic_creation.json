@@ -1,0 +1,6 @@
+{
+    "name": "Volcanic Creation",
+    "description": "You have a natural affinity for fire, and can summon chunks of volcanic stone to hurl, as well as set the ground alight.",
+    "type": "origins:simple",
+    "priority": 0
+}

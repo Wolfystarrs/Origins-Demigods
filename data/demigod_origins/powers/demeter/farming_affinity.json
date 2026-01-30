@@ -1,0 +1,6 @@
+{
+    "name": "Farming Affinity",
+    "description": "You have a natural talent for growing crops, and are able to gain double the resources on harvest.",
+    "type": "origins:simple",
+    "priority": 0
+}

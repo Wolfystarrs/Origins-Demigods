@@ -1,0 +1,6 @@
+{
+    "name": "Void Grasp",
+    "description": "You can summon shadows to surround another player.",
+    "type": "origins:simple",
+    "priority": 0
+}

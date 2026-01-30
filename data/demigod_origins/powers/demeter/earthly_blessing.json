@@ -1,0 +1,6 @@
+{
+    "name": "Earthly Blessing",
+    "description": "When touching grassland and the like, you are able to grow life from nothing.",
+    "type": "origins:simple",
+    "priority": 0
+}

@@ -1,0 +1,6 @@
+{
+    "name": "Chaotic Vintner",
+    "description": "There are potions that only you can make, with both dangerous and ecstatic effects.",
+    "type": "origins:simple",
+    "priority": 0
+}

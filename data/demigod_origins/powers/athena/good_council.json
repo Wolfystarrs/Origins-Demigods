@@ -1,0 +1,6 @@
+{
+    "name": "Good Council",
+    "description": "Enemies that are usually hostile will sense your wisdom and peace and will not attack unless provoked.",
+    "type": "origins:simple",
+    "priority": 0
+}

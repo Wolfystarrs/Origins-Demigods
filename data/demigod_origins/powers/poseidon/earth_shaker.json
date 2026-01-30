@@ -1,0 +1,6 @@
+{
+    "name": "Earth Shaker",
+    "description": "Powerful quakes can be summoned at your will, knocking others off their footing while you hold strong.",
+    "type": "origins:simple",
+    "priority": 0
+}

@@ -1,0 +1,6 @@
+{
+    "name": "Symphonic Listening",
+    "description": "You are naturally drawn to music, and regain health when a song is playing nearby.",
+    "type": "origins:simple",
+    "priority": 0
+}

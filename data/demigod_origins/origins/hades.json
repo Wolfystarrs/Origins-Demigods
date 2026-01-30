@@ -1,0 +1,16 @@
+{
+    "name": "Child Of Hades",
+    "description": "You are the child of the god of the dead, the underworld, and riches.",
+    "powers": [
+        "demigod_origins:hades/withering_touch",
+        "demigod_origins:hades/hidden_riches",
+        "demigod_origins:hades/underworld_affinity",
+        "demigod_origins:persephone/seasonal_affection",
+        "demigod_origins:hades/soul_summon"
+    ],
+    "icon": {
+        "amount": 1,
+        "id": "minecraft:oak_log"
+    },
+    "impact": 0
+}

@@ -1,0 +1,6 @@
+{
+    "name": "Shadow Foot",
+    "description": "Dark mists can shroud you from the world, granting an instant movement place to place.",
+    "type": "origins:simple",
+    "priority": 0
+}

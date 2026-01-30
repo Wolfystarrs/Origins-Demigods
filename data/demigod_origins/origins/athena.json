@@ -1,0 +1,15 @@
+{
+    "name": "The Child Of Athena",
+    "description": "You are the child of the goddess of wisdom, strategy, and handicraft.",
+    "powers": [
+        "demigod_origins:athena/two_steps_ahead",
+        "demigod_origins:athena/flag_bearer",
+        "demigod_origins:athena/good_council",
+        "demigod_origins:athena/leading_strategist"
+    ],
+        "icon": {
+        "amount": 1,
+        "id": "minecraft:oak_log"
+    },
+    "impact": 0
+}

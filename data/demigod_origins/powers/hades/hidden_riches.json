@@ -1,0 +1,6 @@
+{
+    "name": "Hidden Riches",
+    "description": "You have a familiar feeling while underground, and are able to sense ores.",
+    "type": "origins:simple",
+    "priority": 0
+}

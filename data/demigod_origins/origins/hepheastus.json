@@ -1,0 +1,14 @@
+{
+    "name": "The Child Of Hepheastus",
+    "description": "You are the child of the god of fire, volcanoes, craftsmanship, and smithing.",
+        "powers": [
+        "demigod_origins:hepheastus/forged_land",
+        "demigod_origins:hepheastus/volcanic_creation",
+        "demigod_origins:hepheastus/gods_kiln"
+    ],
+    "icon": {
+        "amount": 1,
+        "id": "minecraft:oak_log"
+    },
+    "impact": 0
+}

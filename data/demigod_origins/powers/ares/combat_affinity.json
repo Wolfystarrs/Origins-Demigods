@@ -1,0 +1,6 @@
+{
+    "name": "Combat Affinity",
+    "description": "You have a natural talent for battle, and feel your father’s strength when in combat.",
+    "type": "origins:simple",
+    "priority": 0
+}

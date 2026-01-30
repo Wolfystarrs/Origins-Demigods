@@ -1,0 +1,6 @@
+{
+    "name": "Ocean Affinity",
+    "description": "The ocean calls to you, and grants healing when you enter.",
+    "type": "origins:simple",
+    "priority": 0
+}

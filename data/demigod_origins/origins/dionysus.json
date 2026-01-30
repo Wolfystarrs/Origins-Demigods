@@ -1,0 +1,14 @@
+{
+    "name": "The Child Of Dionysus",
+    "description": "You are the child of the god of wine, pleasure, theatre, and festivity.",
+        "powers": [
+        "demigod_origins:dionysus/ritualistic_consumer",
+        "demigod_origins:dionysus/chaotic_vinter",
+        "demigod_origins:dionysus/mad_ruin"
+    ],
+    "icon": {
+        "amount": 1,
+        "id": "minecraft:oak_log"
+    },
+    "impact": 0
+}

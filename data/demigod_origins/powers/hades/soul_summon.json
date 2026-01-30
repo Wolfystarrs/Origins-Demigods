@@ -1,0 +1,6 @@
+{
+    "name": "Soul Summon",
+    "description": "With your connection to the underworld and those who reside in it, you are able to raise the skulls of the dead to hurl overworld.",
+    "type": "origins:simple",
+    "priority": 0
+}

@@ -1,0 +1,15 @@
+{
+    "name": "The Child Of Ares",
+    "description": "You are the child of the god of war, courage, and rebellion.",
+    "powers": [
+        "demigod_origins:ares/combat_affinity",
+        "demigod_origins:ares/fated_pack",
+        "demigod_origins:ares/war_cry",
+        "demigod_origins:ares/bloodlust"
+    ],    
+    "icon": {
+        "amount": 1,
+        "id": "minecraft:oak_log"
+    },
+    "impact": 0
+}

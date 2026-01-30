@@ -1,0 +1,16 @@
+{
+    "name": "The Child Of Hermes",
+    "description": "You are the child of the god of theft, travellers, and speed.",
+           "powers": [
+        "demigod_origins:hermes/speedster",
+        "demigod_origins:hermes/winged_boot_training",
+        "demigod_origins:hermes/patrons_pouch",
+        "demigod_origins:hermes/bargainer",
+        "demigod_origins:hermes/crossing_guard"
+    ], 
+    "icon": {
+        "amount": 1,
+        "id": "minecraft:oak_log"
+    },
+    "impact": 0
+}

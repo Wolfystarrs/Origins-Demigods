@@ -1,0 +1,6 @@
+{
+    "name": "Patron’s Pouch",
+    "description": "You are familiar with both delivery and thievery, carrying with you a pouch for extra storage at all times.",
+    "type": "origins:simple",
+    "priority": 0
+}

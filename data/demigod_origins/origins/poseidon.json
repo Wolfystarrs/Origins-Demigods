@@ -1,0 +1,15 @@
+{
+    "name": "Child Of Poseidon",
+    "description": "You are the child of the god of the sea, floods, and earthquakes.",
+    "powers": [
+        "demigod_origins:poseidon/aquatic_adeptness",
+        "demigod_origins:poseidon/child_of_the_water",
+        "demigod_origins:poseidon/ocean_affinity",
+        "demigod_origins:poseidon/earth_shaker"
+    ],
+    "icon": {
+        "amount": 1,
+        "id": "minecraft:oak_log"
+    },
+    "impact": 0
+}

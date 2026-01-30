@@ -1,0 +1,14 @@
+{
+    "name": "The Child Of Apollo",
+    "description": "You are the child of the god of music, archery, healing, and the sun.",
+    "powers": [
+        "demigod_origins:apollo/sun_child",
+        "demigod_origins:apollo/symphonic_listening",
+        "demigod_origins:apollo/prophesised_protector"
+    ],
+        "icon": {
+        "amount": 1,
+        "id": "minecraft:oak_log"
+    },
+    "impact": 0
+}

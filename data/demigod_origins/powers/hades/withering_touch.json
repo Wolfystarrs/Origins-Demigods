@@ -1,0 +1,6 @@
+{
+    "name": "Withering Touch",
+    "description": "When touching living creatures, you are able to cast deathlike effects upon them.",
+    "type": "origins:simple",
+    "priority": 0
+}

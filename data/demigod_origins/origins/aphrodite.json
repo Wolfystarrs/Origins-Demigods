@@ -1,0 +1,15 @@
+{
+    "name": "The Child Of Aphrodite",
+    "description": "You are the child of the goddess of beauty, love, and passion.",
+        "powers": [
+        "demigod_origins:aphrodite/pearl_of_the_sea",
+        "demigod_origins:aphrodite/matchmaker",
+        "demigod_origins:aphrodite/stylist",
+        "demigod_origins:aphrodite/jealous_gaze"
+    ],
+    "icon": {
+        "amount": 1,
+        "id": "minecraft:oak_log"
+    },
+    "impact": 0
+}
