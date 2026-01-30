@@ -1,6 +1,36 @@
 {
     "name": "Botanic Keepsakes",
     "description": "Your mother’s love for flowers passed down to you, allowing them to sustain you the same way foods would.",
-    "type": "origins:simple",
+    "type": "origins:multiple",
+    "small": {
+        "type": "origins:edible_item",
+        "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "small_flowers"
+        }
+        },
+        "food_component": {
+            "nutrition": 2,
+            "saturation": 1.0
+        },
+        "consume_action": "eat"
+    },
+
+    "tall": {
+               "type": "origins:edible_item",
+        "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "tall_flowers"
+        }
+        },
+        "food_component": {
+            "nutrition": 3,
+            "saturation": 1.5
+        },
+        "consume_action": "eat" 
+    },
+
     "priority": 0
 }
