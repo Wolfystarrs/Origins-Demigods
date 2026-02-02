@@ -5,7 +5,8 @@
         "demigod_origins:demeter/farming_affinity",
         "demigod_origins:demeter/earthly_blessing",
         "demigod_origins:persephone/seasonal_affection",
-        "demigod_origins:demeter/barren_grief"
+        "demigod_origins:demeter/barren_grief",
+        "demigod_origins:demeter/demeter_marker"
     ],
     "icon": {
         "amount": 1,

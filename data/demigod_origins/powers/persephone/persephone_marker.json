@@ -1,0 +1,22 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+              "type": "origins:execute_command",
+              "command": "tag @p add IsPersephone"
+            },
+            {
+              "type": "origins:execute_command",
+              "command": "tag @p remove IsDemeter"
+            },
+            {
+              "type": "origins:execute_command",
+              "command": "tag @p remove IsHades"
+            }
+        ]
+    },
+    "interval": 20,
+    "hidden": true
+}
