@@ -1,6 +1,28 @@
 {
     "name": "Night Child",
     "description": "When in darkness, you feel rested and powerful, passively healing under the cover of night.",
-    "type": "origins:simple",
+    "type": "origins:action_over_time",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:exposed_to_sky"
+            },
+            {
+                "type": "origins:daytime",
+                "inverted": true
+            }
+        ]      
+    },
+    "entity_action": {
+        "type": "origins:apply_effect",
+          "effect": {
+            "id": "minecraft:regeneration",
+            "duration": 200,
+            "amplifier": 0,
+            "show_particles": false
+          }
+    },
+    "interval": 200,
     "priority": 0
 }
