@@ -11,27 +11,20 @@
         }
     },
     "condition": {
-       "type": "origins:command",
-       "command": "execute if entity @a[distance= ..10, tag= IsDemeter]",
+       "type": "origins:entity_in_radius",
+           "bientity_condition": {
+              "type": "origins:target_condition",
+              "condition": {
+                  "type": "origins:origin",
+                  "origin": "demigod_origins:demeter"
+                  }
+              },
+       "shape": "sphere",
+       "radius": 15,
        "comparison": ">=",
        "compare_to": 1
     },
     "interval": 60,
-    "type": "origins:action_over_time",
-    "entity_action": {
-        "type": "origins:apply_effect",
-        "effect": {
-            "id": "minecraft:regeneration",
-            "duration": 60,
-            "amplifier": 0
-        }
-    },
-    "condition": {
-    "type": "origins:command",
-    "command": "execute if entity @a[distance= ..10, tag= IsDemeter]",
-    "comparison": ">=",
-    "compare_to": 1
-    },
-    "interval": 60,
     "priority": 0
 }
+
