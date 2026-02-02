@@ -5,7 +5,8 @@
         "demigod_origins:nyx/night_child",
         "demigod_origins:nyx/void_grasp",
         "demigod_origins:nyx/dark_veil",
-        "demigod_origins:nyx/shadow_foot"
+        "demigod_origins:nyx/shadow_foot",
+        "demigod_origins:nyx/void_grasp_resource"
     ],
     "icon": {
         "amount": 1,

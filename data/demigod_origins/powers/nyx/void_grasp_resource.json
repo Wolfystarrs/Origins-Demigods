@@ -1,0 +1,14 @@
+{
+    "name": "Void Grasp Resource",
+    "description": "Backend power - used for void grasp cooldown.", 
+    "type": "origins:resource",
+    "hidden": true,
+    "min": 0,
+    "max": 120,
+    "start_value": 120,
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 0
+        },
+    "priority": 0
+}

@@ -6,8 +6,7 @@
         "demigod_origins:hades/hidden_riches",
         "demigod_origins:hades/underworld_affinity",
         "demigod_origins:persephone/seasonal_affection",
-        "demigod_origins:hades/soul_summon",
-        "demigod_origins:hades/hades_marker"
+        "demigod_origins:hades/soul_summon"
     ],
     "icon": {
         "amount": 1,
