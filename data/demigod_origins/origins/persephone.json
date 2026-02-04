@@ -5,7 +5,8 @@
         "demigod_origins:persephone/botanic_keepsakes",
         "demigod_origins:persephone/winter_mode",
         "demigod_origins:persephone/summer_mode",
-        "demigod_origins:persephone/spring_growth"
+        "demigod_origins:persephone/spring_growth",
+        "demigod_origins:persephone/winter_mode_resource"
     ],
     "icon": {
         "amount": 1,

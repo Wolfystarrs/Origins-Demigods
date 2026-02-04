@@ -1,6 +1,77 @@
 {
     "name": "Winter Mode",
-    "description": "Around children of Hades, you feel still and serene, and can freeze other players in place.",
-    "type": "origins:simple",
-    "priority": 0
+    "description": "Around children of Hades, you feel still and serene allowing you to freeze other players in place (right click).",
+    "type": "origins:multiple",
+
+    "wintermode": {
+       "type": "origins:action_on_entity_use",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+               {
+               "type": "origins:resource",
+               "resource": "demigod_origins:persephone/winter_mode_resource",
+               "comparison": "==",
+               "compare_to": 60
+               },
+               {
+               "type": "origins:entity_in_radius",
+               "bientity_condition": {
+                   "type": "origins:target_condition",
+                   "condition": {
+                      "type": "origins:origin",
+                      "origin": "demigod_origins:hades"
+                  }
+              },
+               "shape": "sphere",
+               "radius": 15,
+               "comparison": ">=",
+               "compare_to": 1
+               }
+            ]
+        },
+
+       "bientity_action": {
+          "type": "origins:and",
+          "actions": [
+       {
+           "type": "origins:target_action",
+           "action": {
+                "type": "origins:apply_effect",
+                "effect": {
+                        "id": "minecraft:slowness",
+                        "duration": 160,
+                        "amplifer": 255
+                       }
+           }
+       },
+       {
+           "type": "origins:actor_action",
+           "action": {
+               "type": "origins:change_resource",
+               "resource": "demigod_origins:persephone/winter_mode_resource",
+               "operation": "set",
+               "change": 0
+            }
+       }
+        ]
+    }
+    },
+
+    "wintermodecooldown": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "demigod_origins:persephone/winter_mode_resource",
+            "comparison": "<",
+            "compare_to": 60
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "demigod_origins:persephone/winter_mode_resource",
+            "operation": "add",
+            "change": 1
+        },
+        "interval": 20
+    }
 }

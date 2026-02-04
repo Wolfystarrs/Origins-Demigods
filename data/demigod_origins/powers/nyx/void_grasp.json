@@ -1,6 +1,6 @@
 {
     "name": "Void Grasp",
-    "description": "You can summon shadows to surround another player.",
+    "description": "You can summon shadows to surround another player (right click).",
     "type": "origins:multiple",
 
     "voidgrasp": {
@@ -48,7 +48,8 @@
             }
        }
         ]
-    }
+    },
+    "priority": 0
     },
 
     "voidgraspcooldown": {
@@ -65,8 +66,7 @@
             "operation": "add",
             "change": 1
         },
-        "interval": 20
-    },
-        
-     "priority": 1
+        "interval": 20,
+        "priority": 0
+    }
 }

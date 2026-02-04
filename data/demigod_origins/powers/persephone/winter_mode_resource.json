@@ -1,0 +1,14 @@
+{
+    "name": "Winter Mode Resource",
+    "description": "Backend power - used for winter mode cooldown.", 
+    "type": "origins:resource",
+    "hidden": true,
+    "min": 0,
+    "max": 60,
+    "start_value": 60,
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 1
+        },
+    "priority": 0
+}

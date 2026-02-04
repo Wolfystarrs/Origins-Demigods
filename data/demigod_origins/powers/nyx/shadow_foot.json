@@ -1,6 +1,58 @@
 {
     "name": "Shadow Foot",
     "description": "Dark mists can shroud you from the world, granting an instant movement place to place.",
-    "type": "origins:simple",
-    "priority": 0
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:raycast",
+                "distance": 40,
+                "block": true,
+                "entity": false
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:spawn_particles",
+                        "particle": "minecraft:large_smoke",
+                        "spread": {
+                            "x": 0.2,
+                            "y": 0.2,
+                            "z": 0.2
+                        },
+                        "count": 300,
+                        "speed": 0.1
+                    },
+                    {
+                        "type": "origins:raycast",
+                        "distance": 100,
+                        "block": true,
+                        "entity": false,
+                        "shape_type": "visual",
+                        "fluid_handling": "any",
+                        "command_at_hit": "tp @s ~ ~ ~"
+                    },
+                    {
+                        "type": "origins:play_sound",
+                        "sound": "minecraft:entity.enderman.teleport",
+                        "volume": 1
+                    }
+                ]
+            },
+            "else_action": {
+                "type": "origins:execute_command",
+                "command": "playsound minecraft:entity.ender_eye.death master @s ~ ~ ~ 1.3 1 1"
+            }
+        },
+        "cooldown": 50,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 6
+        },
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": false
+        }
 }

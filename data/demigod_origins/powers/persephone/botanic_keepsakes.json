@@ -14,7 +14,8 @@
             "nutrition": 2,
             "saturation": 1.0
         },
-        "consume_action": "eat"
+        "consume_action": "eat",
+        "priority": 0
     },
 
     "tall": {
@@ -29,8 +30,7 @@
             "nutrition": 3,
             "saturation": 1.5
         },
-        "consume_action": "eat" 
-    },
-
-    "priority": 0
+        "consume_action": "eat",
+        "priority": 0
+    }
 }
