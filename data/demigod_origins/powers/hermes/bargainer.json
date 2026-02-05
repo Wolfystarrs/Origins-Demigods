@@ -1,6 +1,18 @@
 {
     "name": "Bargainer",
     "description": "Your father’s standing as the god of commerce has granted you a keen insight into trades.",
-    "type": "origins:simple",
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "id": "minecraft:hero_of_the_village",
+            "duration": 1200,
+            "amplifier": 0,
+            "show_particles": false,
+            "show_icon": false,
+            "is_ambient": true
+        }
+    },
+    "interval": 1200,
     "priority": 0
 }

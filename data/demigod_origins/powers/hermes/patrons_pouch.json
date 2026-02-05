@@ -1,6 +1,10 @@
 {
     "name": "Patron’s Pouch",
     "description": "You are familiar with both delivery and thievery, carrying with you a pouch for extra storage at all times.",
-    "type": "origins:simple",
+    "type": "origins:inventory",
+    "title": "POUCH YAY",
+    "container_type": "hopper",
+    "key": "key.origins.secondary_active",
+    "recoverable": true,
     "priority": 0
 }

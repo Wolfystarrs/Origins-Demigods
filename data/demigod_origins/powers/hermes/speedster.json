@@ -1,6 +1,13 @@
 {
     "name": "Speedster",
     "description": "With your father being the god of speed, you have a naturally swift step.",
-    "type": "origins:simple",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.movement_speed",
+        "id": "minecraft:generic.movement_speed",
+        "operation": "add_multiplied_total",
+        "resource": "demigod_origins:hermes_speedster",
+        "amount": 1.25
+    },
     "priority": 0
 }
