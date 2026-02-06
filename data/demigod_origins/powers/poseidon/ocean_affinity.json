@@ -1,6 +1,40 @@
 {
     "name": "Ocean Affinity",
     "description": "The ocean calls to you, and grants healing when you enter.",
-    "type": "origins:simple",
+    "type": "origins:action_over_time",
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:submerged_in",
+                "fluid": "minecraft:water"
+            },
+            {
+                "type": "origins:biome",
+                "biomes": [
+                    "minecraft:ocean",
+                    "minecraft:cold_ocean",
+                    "minecraft:deep_ocean",
+                    "minecraft:warm_ocean",
+                    "minecraft:frozen_ocean",
+                    "minecraft:lukewarm_ocean",
+                    "minecraft:deep_cold_ocean",
+                    "minecraft:deep_frozen_ocean",
+                    "minecraft:deep_lukewarm_ocean"
+                ]
+            }
+        ]
+    },
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "id": "minecraft:regeneration",
+            "duration": 50,
+            "amplifier": 0,
+            "show_icon": false,
+            "show_particles": false
+        }
+    },
+    "interval": 50,
     "priority": 0
 }

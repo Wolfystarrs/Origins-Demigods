@@ -1,6 +1,69 @@
 {
     "name": "Earth Shaker",
     "description": "Powerful quakes can be summoned at your will, knocking others off their footing while you hold strong.",
-    "type": "origins:simple",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:area_of_effect",
+        "radius":5,
+        "shape": "sphere",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [     
+            {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "id": "minecraft:nausea",
+                            "duration": 100,
+                            "amplifier": 2
+                        }
+                    },
+                    {
+                        "type": "origins:add_velocity",
+                        "space": "local_horizontal",
+                        "set": true,
+                        "y": 1,
+                        "z": -2.5
+                    },
+                    {
+                        "type": "origins:play_sound",
+                        "sound": "minecraft:entity.lightning_bolt.thunder",
+                        "category": "players"
+                    }
+                ]
+            }
+            },
+            {
+                "type": "origins:actor_action",
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:block.beacon.activate",
+                            "category": "players"
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.lightning_bolt.thunder",
+                            "category": "players",
+                            "volume": 0.6
+                        }
+                    ]
+                }
+            }
+        ]
+        }
+    },
+    "cooldown": 300,
+    "hud_render": {
+        "bar_index": 0,
+        "should_render": true
+    },
+    "key": "key.origins.primary_active",
     "priority": 0
 }

@@ -22,7 +22,9 @@
         "actions":[ 
         {
             "type": "origins:add_velocity",
-            "y": 1.5
+            "y": 0,
+            "z": 2,
+            "space": "local_horizontal"
         },
         {
             "type": "origins:play_sound",

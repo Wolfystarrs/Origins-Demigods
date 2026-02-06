@@ -1,6 +1,110 @@
 {
     "name": "Child of The Water",
     "description": "You have a natural talent when it comes to water, being able to drought and summon it at will.",
-    "type": "origins:simple",
-    "priority": 0
+    "type": "origins:multiple",
+
+    "child_of_the_water": {
+       "type": "origins:active_self",
+       "key": "key.origins.secondary_active",
+       "entity_action": {
+           "type": "origins:if_else",
+           "condition": {
+              "type": "origins:and",
+              "conditions": [
+              {
+              "type": "origins:raycast",
+              "block_condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                    "type": "origins:block",
+                    "block": "minecraft:water",
+                    "inverted": true
+                    }
+                ]
+               },
+              "distance": 20
+            },
+            {
+            "type": "origins:resource",
+            "resource": "demigod_origins:poseidon/child_of_the_water_resource",
+            "compare_to": 0,
+            "comparison": ">="
+            }
+            ]
+           },
+
+           "if_action": {
+              "type": "origins:and",
+              "condition": {
+                  "type": "origins:resource",
+                  "resource": "demigod_origins:poseidon/child_of_the_water_resource",
+                  "compare_to": 60,
+                  "comparison": "=="
+              },
+              "actions": [
+                {
+                    "type": "origins:raycast",
+                    "distance": 20,
+                    "miss_action": {
+                        "type": "origins:play_sound",
+                        "sound": "minecraft:entity.wolf_angry.growl"
+                    },
+                    "hit_action": {
+                        "type": "origins:play_sound",
+                        "sound": "minecraft:block.water.ambient"
+                    },
+                    "command_at_hit": "fill ~ ~ ~ ~ ~ ~ minecraft:water replace air"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "demigod_origins:poseidon/child_of_the_water_resource",
+                    "operation": "set",
+                    "change": 0
+                }
+              ]
+           },
+
+           "else_action": {
+                "type": "origins:and",
+                "condition": {
+                  "type": "origins:resource",
+                  "resource": "demigod_origins:poseidon/child_of_the_water_resource",
+                  "compare_to": 30,
+                  "comparison": ">="
+              },
+                "actions": [
+                {
+                    "type": "origins:raycast",
+                    "distance": 20,
+                    "command_at_hit": "fill ~-2 ~ ~-2 ~2 ~ ~2 minecraft:air replace water"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "demigod_origins:poseidon/child_of_the_water_resource",
+                    "operation": "add",
+                    "change": -30
+                }
+              ]
+           }
+       }
+       
+    },
+
+    "child_of_the_water_cooldown": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "demigod_origins:poseidon/child_of_the_water_resource",
+            "comparison": "<",
+            "compare_to": 60
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "demigod_origins:poseidon/child_of_the_water_resource",
+            "operation": "add",
+            "change": 1
+        },
+        "interval": 20
+    }
 }
