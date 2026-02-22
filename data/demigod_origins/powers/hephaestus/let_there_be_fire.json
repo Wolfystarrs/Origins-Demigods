@@ -1,0 +1,27 @@
+{
+    "name": "Let there be fire!",
+    "description": "You have a natural affinity for fire letting you set the ground alight.",
+    "type": "origins:active_self",
+
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:empty"
+        }
+    },
+
+    "entity_action": {
+        "type": "origins:raycast",
+        "distance": 10,
+        "command_at_hit": "fill ~ ~ ~ ~ ~ ~ minecraft:fire replace air"
+    },
+
+    "key": "key.use",
+    "cooldown": 200,
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 0
+    },
+    "priority": 0
+ }

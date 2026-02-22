@@ -1,6 +1,36 @@
 {
     "name": "Seasonal Affection",
     "description": "Around children of Persephone, you feel empowered and safe, allowing your abilities to last longer.",
-    "type": "origins:simple",
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:entity_in_radius",
+            "bientity_condition": {
+            "type": "origins:target_condition",
+            "condition": {
+                "type": "origins:origin",
+                "origin": "demigod_origins:persephone"
+            }
+            },
+            "shape": "sphere",
+            "radius": 15,
+            "comparison": ">=",
+            "compare_to": 1
+        },
+        "if_action": {
+            "type": "origins:change_resource",
+            "resource": "demigod_origins:persephone/seasonal_affection_resource",
+            "change": 1,
+            "operation": "set"
+        },
+        "else_action": {
+            "type": "origins:change_resource",
+            "resource": "demigod_origins:persephone/seasonal_affection_resource",
+            "change": 0,
+            "operation": "set"
+        }
+    },
+    "interval": 20,
     "priority": 0
 }

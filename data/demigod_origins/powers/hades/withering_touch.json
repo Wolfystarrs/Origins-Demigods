@@ -1,6 +1,40 @@
 {
     "name": "Withering Touch",
     "description": "When touching living creatures, you are able to cast deathlike effects upon them.",
-    "type": "origins:simple",
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:actor_condition",
+            "condition": {
+                "type": "origins:resource",
+                "resource": "demigod_origins:persephone/seasonal_affection_resource",
+                "compare_to": 1,
+                "comparison": "=="
+            }
+        },
+        "if_action": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "id": "minecraft:wither",
+                    "amplifier": 0,
+                    "duration": 160
+                }
+            }
+        },
+        "else_action": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "id": "minecraft:wither",
+                    "amplifier": 0,
+                    "duration": 60
+                }
+            }
+        }
+    },
     "priority": 0
 }

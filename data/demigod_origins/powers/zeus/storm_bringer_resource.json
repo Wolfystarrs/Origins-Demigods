@@ -1,0 +1,10 @@
+{
+    "name": "Spear Affinity",
+    "description": "You have a natural talent for being airborne, and are able to launch yourself into flight for short periods of time.",
+    "hidden": true,
+    "type": "origins:resource",
+    "start_value": 0,
+    "min": 0,
+    "max": 2,
+    "priority": 0
+}

@@ -1,6 +1,19 @@
 {
     "name": "Soul Summon",
     "description": "With your connection to the underworld and those who reside in it, you are able to raise the skulls of the dead to hurl overworld.",
-    "type": "origins:simple",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:fire_projectile",
+        "count": 1,
+        "divergence": 1,
+        "speed": 0.7,
+        "entity_type": "minecraft:wither_skull"
+    },
+    "cooldown": 600,
+    "key": "key.origins.primary_active",
+    "hud_render": {
+        "bar_index": 0,
+        "should_render": true
+    },
     "priority": 0
 }

@@ -3,9 +3,11 @@
     "description": "You are the child of the god of the sky, lightning, order, and justice.",
     "powers": [
         "demigod_origins:zeus/thunder_struck",
-        "demigod_origins:zeus/spear_affinity",
-        "demigod_origins:zeus/sky_healing",
-        "demigod_origins:zeus/storm_bringer"
+        "demigod_origins:zeus/sky_affinity",
+        "demigod_origins:zeus/sky_affinity_resistance",
+        "demigod_origins:zeus/cloud_healing",
+        "demigod_origins:zeus/storm_bringer",
+        "demigod_origins:zeus/storm_bringer_resource"
     ],
     "icon": {
         "amount": 1,

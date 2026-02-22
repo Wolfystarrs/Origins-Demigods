@@ -1,0 +1,11 @@
+{
+    "name": "Sky Affinity Resistance",
+    "description": "Backend, No fall damage for Sky Affinity after activation (once)",
+    "hidden": true,
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "fall"
+    },
+    "priority": 0
+ }

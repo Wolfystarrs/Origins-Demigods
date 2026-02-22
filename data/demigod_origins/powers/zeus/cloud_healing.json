@@ -1,0 +1,28 @@
+{
+    "name": "Sky Healing",
+    "description": "The tops of mountains and skies call to you, and will heal you when amongst them.",
+    "type": "origins:action_over_time",
+    "condition": {
+        "type": "origins:distance_from_coordinates",
+        "ignore_x": true,
+        "ignore_z": true,
+        "offset": {
+            "y": -64
+        },
+        "shape": "sphere",
+        "comparison": ">=",
+        "compare_to": 256
+    },
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "id": "minecraft:regeneration",
+            "amplifier": 0,
+            "duration": 100,
+            "show_icon": false,
+            "show_particles": true
+        }
+    },
+    "interval": 100,
+    "priority": 0
+}

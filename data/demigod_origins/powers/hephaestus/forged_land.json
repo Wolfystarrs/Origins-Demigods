@@ -1,0 +1,96 @@
+{
+    "name": "Forged Land",
+    "description": "You and your father share a common feeling of being cast out, feeling at home in the heat, and solitude of the nether.",
+    "type": "origins:multiple",
+
+    "fireresistance": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "id": "minecraft:fire_resistance",
+                "duration": -1,
+                "amplifier": 0,
+                "show_icon": false,
+                "show_particles": false
+            }
+        },
+        "priority": 0
+    },
+
+    "netherarmour": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:dimension",
+                                "dimension": "minecraft:the_nether"
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "demigod_origins:hephaestus/forged_land_resource",
+                                "compare_to": 0,
+                                "comparison": "=="
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "/attribute @s minecraft:generic.armor modifier add demigod_origins:hephaestus_armour 4 add_value"
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "demigod_origins:hephaestus/forged_land_resource",
+                                "change": 1,
+                                "operation": "set"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:dimension",
+                                "dimension": "minecraft:the_nether",
+                                "inverted": true
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "demigod_origins:hephaestus/forged_land_resource",
+                                "compare_to": 1,
+                                "comparison": "=="
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "/attribute @s minecraft:generic.armor modifier remove demigod_origins:hephaestus_armour"
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "demigod_origins:hephaestus/forged_land_resource",
+                                "change": 0,
+                                "operation": "set"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "interval": 50,
+        "priority": 0
+    }
+}
